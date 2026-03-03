@@ -4,6 +4,15 @@
 3. faqImageOrigAtl = Save the main FAQ image's default 'alt' text to a variable using the alt property
 4. h2s = Find all the H2 elements inside the FAQ section and save them as a list using querySelectorAll "#faqs h2"
 
+
+const faqImage = document.querySelectorAll("#faq_image");
+const faqImageOrigSrc = faqImage.src;
+const faqImageOrigAtl = faqImage.alt;
+const h2s = document.querySelectorAll("#faqs h2");
+
+
+
+
 // SETUP THE EVENT HANDLER (When an H2 is clicked)
 const toggleVisibility = evt => {
     1. Figure out exactly which H2 heading the user just clicked and save it to a variable using 
