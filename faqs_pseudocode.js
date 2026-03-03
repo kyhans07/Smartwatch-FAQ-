@@ -10,11 +10,8 @@ const faqImageOrigSrc = faqImage.src;
 const faqImageOrigAtl = faqImage.alt;
 const h2s = document.querySelectorAll("#faqs h2");
 
-
-
-
 // SETUP THE EVENT HANDLER (When an H2 is clicked)
-const toggleVisibility = evt => {
+const toggleVisibility = evt => {}
     1. Figure out exactly which H2 heading the user just clicked and save it to a variable using 
 	   const ct = evt.currentTarget;
 	
