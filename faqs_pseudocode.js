@@ -1,8 +1,8 @@
 // SETUP GLOBAL VARIABLES
 
-const faqImage = document.querySelectorAll("#full-width-img");
+const faqImage = document.querySelector("#full-width-img");
 const faqImageOrigSrc = faqImage.src;
-const faqImageOrigAtl = faqImage.alt;
+const faqImageOrigAlt = faqImage.alt;
 const h2s = document.querySelectorAll("#faqs h2");
 
 // SETUP THE EVENT HANDLER (When an H2 is clicked)
@@ -39,7 +39,7 @@ const toggleVisibility = evt => {
 
     if (allClosed) {
         faqImage.src = faqImageOrigSrc
-        faqImage.alt = faqImageOrigAtl
+        faqImage.alt = faqImageOrigAlt
     }
 
     evt.preventDefault();
