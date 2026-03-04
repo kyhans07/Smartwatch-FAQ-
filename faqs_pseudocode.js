@@ -25,11 +25,8 @@ const toggleVisibility = evt => {
 
             h2.nextElementSibling.classList.toggle("open");
 
-            const x1  = h2.getAttribute("data-img"); // gets data info from html
-            const x2 = h2.getAttribute("data-alt");
-
-            faqImage.src = x1;
-            faqImage.alt = x2;
+            faqImage.src = h2.getAttribute("data-img");
+            faqImage.alt = h2.getAttribute("data-alt");
         }
         else{
             h2.classList.remove('minus');
